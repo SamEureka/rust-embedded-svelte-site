@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8686:8686"
+    network_mode: "host"
+    pull_policy: build
